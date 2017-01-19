@@ -10,18 +10,16 @@
     android:layout_marginLeft="@dimen/activity_horizontal_margin"
     android:layout_marginRight="@dimen/activity_horizontal_margin"
     android:foreground="?attr/selectableItemBackground">
-
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="match_parent"
             android:layout_height="200dp"
+            android:cropToPadding="false"
             android:scaleType="centerCrop"
             tools:src="@drawable/a" />
-
         <TextView
             android:id="@+id/textViewJudul"
             android:layout_width="match_parent"
@@ -31,7 +29,6 @@
             android:textAppearance="@style/TextAppearance.AppCompat.Title"
             android:textColor="@android:color/white"
             tools:text="Judul" />
-
         <TextView
             android:id="@+id/textViewDeskripsi"
             android:layout_width="match_parent"
@@ -42,7 +39,6 @@
             android:padding="16dp"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
             tools:text="Deskripsi" />
-
         <Button
             android:id="@+id/buttonEdit"
             style="?android:attr/borderlessButtonStyle"
@@ -51,7 +47,6 @@
             android:layout_below="@+id/textViewDeskripsi"
             android:text="EDIT"
             android:textColor="?attr/colorPrimary" />
-
         <Button
             android:id="@+id/buttonDelete"
             style="?android:attr/borderlessButtonStyle"
@@ -62,7 +57,6 @@
             android:layout_toRightOf="@+id/buttonEdit"
             android:text="DELETE"
             android:textColor="?attr/colorAccent" />
-
         <ImageButton
             android:id="@+id/buttonShare"
             style="?android:attr/borderlessButtonStyle"
@@ -73,7 +67,6 @@
             android:layout_marginRight="16dp"
             android:tint="#757575"
             app:srcCompat="@drawable/ic_share_black_24dp" />
-
         <ImageButton
             android:id="@+id/buttonFavorite"
             style="?android:attr/borderlessButtonStyle"
